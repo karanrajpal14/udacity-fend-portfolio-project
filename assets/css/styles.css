@@ -1,3 +1,8 @@
 .section:nth-child(2n+1){
 	background-color:hsl(0, 0%, 96%);
 }
+
+.footer-nav > p{
+	margin-bottom: 0.1em !important;
+}
+
