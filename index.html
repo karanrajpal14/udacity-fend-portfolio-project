@@ -230,37 +230,41 @@
 							<h3 class="title has-text-centered">Get in touch!</h3>
 							<p>Want to talk about tech, games, or comics? Or anything else at all?</p>
 							<p>Hit me up. We'll have a chat :D</p>
-							<div class="field has-addons">
-								<p class="control has-icons-left has-icons-right is-expanded">
-									<input class="input" type="text" placeholder="Name" required>
-									<span class="icon is-small is-left">
-										<i class="fas fa-user"></i>
-									</span>
-								</p>
-							</div>
-							<div class="field">
-								<p class="control has-icons-left is-expanded">
-									<input class="input" type="email" placeholder="email@yourdomain.com" required>
-									<span class="icon is-small is-left">
-										<i class="fas fa-envelope"></i>
-									</span>
-								</p>
-							</div>
-							<div class="field">
-								<p class="control has-icons-left is-expanded">
-									<textarea class="textarea" placeholder="Tell me, what ails you?" required></textarea>
-								</p>
-							</div>
-							<div class="field">
-								<p class="control">
-									<button class="button is-dark">
-										<span class="icon is-small">
-											<i class="fas fa-paper-plane"></i>
+							<form method="post" netlify>
+								<div class="field has-addons">
+									<p class="control has-icons-left has-icons-right is-expanded">
+										<input name="name" class="input" type="text" placeholder="Name" required>
+										<span class="icon is-small is-left">
+											<i class="fas fa-user"></i>
 										</span>
-										<span>Send</span>
-									</button>
-								</p>
-							</div>
+									</p>
+								</div>
+								<div class="field">
+									<p class="control has-icons-left is-expanded">
+										<input name="email" class="input" type="email" placeholder="email@yourdomain.com" required>
+										<span class="icon is-small is-left">
+											<i class="fas fa-envelope"></i>
+										</span>
+									</p>
+								</div>
+								<div class="field">
+									<p class="control has-icons-left is-expanded">
+										<textarea name="message" class="textarea" placeholder="Tell me, what ails you?" required></textarea>
+									</p>
+								</div>
+								<div class="field is-grouped is-grouped-centered">
+									<p class="control">
+										<button class="button is-dark" type="submit">
+											<span class="icon is-small">
+												<i class="fas fa-paper-plane"></i>
+											</span>
+											<span>Send</span>
+										</button>
+									</p>
+								</div>
+
+							</form>
+
 						</div>
 					</div>
 				</div>
